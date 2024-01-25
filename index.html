@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <div id="scoreBox">Score: 0</div>
+<head>
+<style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#gameCanvas {
+    border: 1px solid black;
+}
+
+#scoreBox {
+    position: absolute;
+    bottom: calc(50% + 330px); /* half of the canvas height + half of the score box height + canvas border */
+    left: 50%;
+    transform: translate(-50%, 50%);
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+}
+</style>
+</head>
+<body>
+<script src="snakegame.js"></script>
+</body>
+</html>
